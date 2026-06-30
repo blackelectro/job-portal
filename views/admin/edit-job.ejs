@@ -1,0 +1,61 @@
+<%- include('../partials/header') %>
+
+<h1>Edit Job</h1>
+
+<form action="/admin/jobs/update/<%= job.id %>" method="POST">
+
+    <label>Job Title</label>
+    <input class="form-control"
+           type="text"
+           name="title"
+           value="<%= job.title %>">
+
+    <br>
+
+    <label>Company</label>
+    <input class="form-control"
+           type="text"
+           name="company"
+           value="<%= job.company %>">
+
+    <br>
+
+    <label>Location</label>
+    <input class="form-control"
+           type="text"
+           name="location"
+           value="<%= job.location %>">
+
+    <br>
+
+    <label>Salary</label>
+    <input class="form-control"
+           type="text"
+           name="salary"
+           value="<%= job.salary %>">
+
+    <br>
+
+    <label>Apply Link</label>
+    <input class="form-control"
+           type="text"
+           name="apply_link"
+           value="<%= job.apply_link %>">
+
+    <br>
+
+    <label>Description</label>
+
+    <textarea class="form-control"
+              rows="6"
+              name="description"><%= job.description %></textarea>
+
+    <br>
+
+    <button class="btn btn-success">
+        Update Job
+    </button>
+
+</form>
+
+<%- include('../partials/footer') %>

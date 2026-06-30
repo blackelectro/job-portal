@@ -1,0 +1,46 @@
+
+<h1>Add New Job</h1>
+
+<form action="/admin/jobs/add" method="POST">
+
+    <label>Job Title</label><br>
+    <input type="text" name="title" required><br><br>
+
+    <label>Company Name</label><br>
+    <input type="text" name="company" required><br><br>
+
+    <label>Category</label><br>
+    <select name="category">
+        <option>Tech</option>
+        <option>Non-Tech</option>
+        <option>Internship</option>
+    </select><br><br>
+
+    <label>Job Type</label><br>
+    <select name="job_type">
+        <option>Freshers</option>
+        <option>Experienced</option>
+        <option>Off Campus</option>
+    </select><br><br>
+
+    <label>Location</label><br>
+    <input type="text" name="location"><br><br>
+
+    <label>Salary</label><br>
+    <input type="text" name="salary"><br><br>
+
+    <label>Last Date</label><br>
+    <input type="date" name="last_date"><br><br>
+
+    <label>Apply Link</label><br>
+    <input type="url" name="apply_link"><br><br>
+
+    <label>Description</label><br>
+    <textarea name="description" rows="6"></textarea><br><br>
+
+    <button type="submit">
+        Publish Job
+    </button>
+
+</form>
+

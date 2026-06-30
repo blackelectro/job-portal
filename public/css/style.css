@@ -1,0 +1,370 @@
+/* ======================================
+   GLOBAL STYLES
+====================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #f4f7fc;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ======================================
+   NAVBAR
+====================================== */
+
+.navbar {
+    background: #0d6efd;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-size: 26px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd43b !important;
+}
+
+.dropdown-menu {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.dropdown-item:hover {
+    background: #0d6efd;
+    color: white;
+}
+
+/* ======================================
+   HERO SECTION
+====================================== */
+
+.hero-section {
+    background: linear-gradient(135deg, #0d6efd, #4c8dff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 20px;
+    margin: 30px 0;
+}
+
+.hero-section h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ======================================
+   CARDS
+====================================== */
+
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card h3,
+.card h4 {
+    color: #0d6efd;
+}
+
+.card p {
+    color: #666;
+}
+
+/* ======================================
+   JOB CARDS
+====================================== */
+
+.job-card {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.job-card:hover {
+    transform: translateY(-4px);
+}
+
+.job-title {
+    color: #0d6efd;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.company-name {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.job-meta {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.job-description {
+    margin-bottom: 20px;
+}
+
+.apply-btn {
+    background: #198754;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background: #146c43;
+    color: white;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background: #0d6efd;
+    border: none;
+}
+
+.btn-success {
+    background: #198754;
+    border: none;
+}
+
+.btn-danger {
+    background: #dc3545;
+    border: none;
+}
+
+.btn-warning {
+    color: white;
+}
+
+/* ======================================
+   FORMS
+====================================== */
+
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 5px rgba(13,110,253,0.3);
+}
+
+/* ======================================
+   TABLES
+====================================== */
+
+.table {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.table th {
+    background: #0d6efd;
+    color: white;
+    text-align: center;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+/* ======================================
+   ADMIN DASHBOARD
+====================================== */
+
+.dashboard-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+}
+
+.dashboard-card h2 {
+    color: #0d6efd;
+}
+
+.dashboard-actions {
+    margin-top: 30px;
+}
+
+.dashboard-actions .btn {
+    margin-right: 10px;
+}
+
+/* ======================================
+   SEARCH BAR
+====================================== */
+
+.search-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.search-box input {
+    margin-bottom: 0;
+}
+
+/* ======================================
+   ALERTS
+====================================== */
+
+.alert {
+    border-radius: 10px;
+    border: none;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer {
+    background: #212529;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer a {
+    color: #ffd43b;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media (max-width: 992px) {
+
+    .hero-section h1 {
+        font-size: 36px;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-section {
+        padding: 50px 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .card,
+    .job-card,
+    form {
+        margin-bottom: 20px;
+    }
+
+    .table {
+        display: block;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-section h1 {
+        font-size: 24px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
