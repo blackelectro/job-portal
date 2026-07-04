@@ -20,7 +20,7 @@ app.use(
 );
 
 app.get("/", (req, res) => {
-    res.send("Job Portal is running!");
+    res.render("home");
 });
 
 app.post("/admin/jobs/add", isAdmin, (req, res) => {
