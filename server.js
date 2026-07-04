@@ -72,8 +72,10 @@ app.post("/admin/jobs/add", isAdmin, (req, res) => {
 
 const db = require("./config/db");
 
-app.listen(3000, () => {
-    console.log("Server running at http://localhost:3000");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
 });
 
 app.get("/about", (req, res) => {
@@ -275,3 +277,4 @@ app.get("/admin/logout", (req, res) => {
         res.redirect("/admin");
     });
 });
+
