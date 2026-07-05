@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,11 +17,5 @@
     "express-session": "^1.19.0",
     "multer": "^2.2.0",
     "mysql2": "^3.22.5"
-  },
-
-
-
-  "scripts": {
-    "start": "node server.js"
   }
 }

@@ -1,0 +1,70 @@
+<%- include('../partials/header') %>
+
+<div class="container mt-5">
+
+    <div class="card shadow p-4">
+
+        <h2 class="mb-4">➕ Create New Admin</h2>
+
+        <form action="/admin/new-admin" method="POST">
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    name="username"
+                    class="form-control"
+                    placeholder="Enter username"
+                    required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">
+                    Temporary Password
+                </label>
+
+                <input
+                    type="password"
+                    name="password"
+                    class="form-control"
+                    placeholder="Enter temporary password"
+                    required>
+            </div>
+
+            <div class="alert alert-info">
+
+                <strong>Note:</strong><br>
+
+                • Username cannot be changed later.<br>
+                • The new admin must change the password on first login.
+
+            </div>
+
+            <button
+                type="submit"
+                class="btn btn-success">
+
+                Create Admin
+
+            </button>
+
+            <a
+                href="/admin/dashboard"
+                class="btn btn-secondary">
+
+                Back
+
+            </a>
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="/js/password-toggle.js"></script>
+
+<%- include('../partials/footer') %>
